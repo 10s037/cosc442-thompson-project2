@@ -1,4 +1,4 @@
-package edu.towson.cis.cosc442.project2.vendingmachine;
+package VendingMachine;
 
 
 /**
@@ -175,6 +175,7 @@ public class VendingMachine {
 		if(( item != null ) && ( this.balance >= item.getPrice() )) {
 			removeItem(code);
 			this.balance -= item.getPrice();
+			this.balance = round(balance,2);
 			returnCode = true;
 		}
 		return returnCode;
@@ -191,4 +192,14 @@ public class VendingMachine {
 		this.balance = 0;
 		return change;
 	}
+
+	//this is a helper method to solve the issue of the double being soooo long
+    private static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
+    }
 }

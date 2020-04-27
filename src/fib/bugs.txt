@@ -1,0 +1,1 @@
+issue with the balance being a weird long double, I made a helper method to take care of thsi issue and round it to the seconds place.
