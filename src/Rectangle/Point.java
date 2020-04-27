@@ -1,13 +1,16 @@
-package edu.towson.cis.cosc442.project2.rectangle;
-
 /**
  * The Point Class.
  */
 public class Point {
-	
-	/** x and y coordinates. */
-	public Double x, y;
-	
+
+	/**
+	 * x and y coordinates.
+	 */
+	public Double x, /**
+	 * The Y.
+	 */
+	y;
+
 	/**
 	 * Instantiates a new point.
 	 *

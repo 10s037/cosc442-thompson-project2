@@ -1,6 +1,7 @@
-package edu.towson.cis.cosc442.project2.rectangle;
+
 
 // TODO: Auto-generated Javadoc
+
 /**
  * The Class Rectangle.
  */
@@ -8,7 +9,7 @@ public class Rectangle {
 	
 	/** The p2. */
 	private Point p1, p2;
-	
+
 	/**
 	 * Instantiates a new rectangle.
 	 *
@@ -19,7 +20,7 @@ public class Rectangle {
 		this.p1 = p1;
 		this.p2 = p2;
 	}
-	
+
 	/**
 	 * Gets the area.
 	 *
@@ -28,7 +29,7 @@ public class Rectangle {
 	public Double getArea() {
 		return Math.abs((p2.x - p1.x) * (p2.y - p1.y));
 	}
-	
+
 	/**
 	 * Gets the diagonal.
 	 *

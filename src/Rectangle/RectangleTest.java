@@ -1,4 +1,4 @@
-package edu.towson.cis.cosc442.project2.rectangle;
+
 
 import static org.junit.Assert.*;
 
@@ -10,9 +10,14 @@ import org.junit.Test;
  * The unit test Class for Rectangle.
  */
 public class RectangleTest {
-	
-	/** Declaring necessary test objects for {@link Rectangle} */
-	Rectangle rect1, rect2;
+
+	/**
+	 * Declaring necessary test objects for {@link Rectangle}
+	 */
+	Rectangle rect1, /**
+	 * The Rect 2.
+	 */
+	rect2;
 
 	/**
 	 * Initializes the necessary test objects for the test cases to use.
@@ -30,8 +35,8 @@ public class RectangleTest {
 	 */
 	@Test
 	public void testGetArea() {
-		assertEquals(10.0, rect1.getArea(),0.001);
-		assertEquals(6.0, rect2.getArea(),0.001);
+		assertEquals(25.0, rect1.getArea(),0.001);
+		assertEquals(9.0, rect2.getArea(),0.001);
 	}
 
 	/**
@@ -39,10 +44,10 @@ public class RectangleTest {
 	 */
 	@Test
 	public void testGetDiagonal() {
-		assertEquals(5.3852, rect1.getDiagonal(), 0.0001);
-		assertEquals(3.6056, rect2.getDiagonal(), 0.0001);
+		assertEquals(7.0710678118654755, rect1.getDiagonal(), 0.0001);
+		assertEquals(4.242640687119285, rect2.getDiagonal(), 0.0001);
 	}
-	
+
 	/**
 	 * Cleans up test objects after a test case is executed.
 	 */
